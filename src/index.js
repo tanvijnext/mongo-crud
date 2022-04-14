@@ -10,7 +10,9 @@ app.use(bodyParser.urlencoded({
     extended: true
 }))
 app.get('/', (req, res) => {
-    res.send("text")
+    res.json({
+        data: "test"
+    })
 })
 app.use(bodyParser.json())
 
